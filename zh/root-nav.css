@@ -1,0 +1,42 @@
+body.root-scroll-nav > .nav.is-scrolled {
+  position: fixed !important;
+  inset: 0 0 auto !important;
+  z-index: 100 !important;
+  background: rgba(255, 255, 255, 0.84) !important;
+  backdrop-filter: blur(18px) saturate(130%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(130%) !important;
+  border-bottom: 1px solid rgba(17, 20, 33, 0.1) !important;
+  box-shadow: 0 4px 20px rgba(17, 20, 33, 0.06) !important;
+}
+body.root-scroll-nav > .nav.is-scrolled .brand,
+body.root-scroll-nav > .nav.is-scrolled .brand strong,
+body.root-scroll-nav > .nav.is-scrolled .nav-link,
+body.root-scroll-nav > .nav.is-scrolled .nav-product-arrow {
+  color: #111421 !important;
+  text-shadow: none !important;
+}
+body.root-scroll-nav > .nav.is-scrolled .brand span {
+  color: #626875 !important;
+}
+body.root-scroll-nav > .nav.is-scrolled .nav-link,
+body.root-scroll-nav > .nav.is-scrolled .nav-product,
+body.root-scroll-nav > .nav.is-scrolled .nav-product-arrow {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+body.root-scroll-nav > .nav.is-scrolled .nav-link:hover,
+body.root-scroll-nav > .nav.is-scrolled .nav-product-arrow:hover {
+  background: rgba(17, 20, 33, 0.05) !important;
+}
+body.root-scroll-nav > .nav.is-scrolled .nav-toggle {
+  color: #111421 !important;
+  background: rgba(17, 20, 33, 0.06) !important;
+  border-color: rgba(17, 20, 33, 0.12) !important;
+}
+@media (max-width: 960px) {
+  body.root-scroll-nav > .nav.is-scrolled .nav-links {
+    background: rgba(255, 255, 255, 0.96) !important;
+    border-color: rgba(17, 20, 33, 0.1) !important;
+  }
+}

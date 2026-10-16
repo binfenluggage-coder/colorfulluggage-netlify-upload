@@ -1,0 +1,70 @@
+/* Mobile density adjustments only; desktop layouts stay unchanged. */
+@media (max-width: 640px) {
+  body { font-size: 14px; }
+  .wrap { width: calc(100% - 28px); }
+  .nav .nav-inner { min-height: 64px; padding: 10px 0; }
+  .nav .brand strong { font-size: 23px; }
+  .nav .brand { gap: 12px; margin-left: 0; }
+  .nav .nav-toggle { width: 48px; height: 42px; flex-shrink: 0; }
+  .nav .nav-links { top: 64px; }
+  body h1, main h1, .home-video-copy h1, .products-copy h1, .custom-hero h1, .hero-panel h1 { font-size: 32px; line-height: 1.15; letter-spacing: 0; }
+  main h2, .section-title h2, .lean-head h2, .mosaic-head h2 { font-size: 26px; line-height: 1.2; letter-spacing: 0; }
+  main h3 { font-size: 18px; line-height: 1.3; }
+  .home-video-copy p, .products-copy p, .custom-hero p, .hero-panel p { font-size: 15px; line-height: 1.6; }
+  .btn { min-height: 44px; padding: 0 16px; font-size: 13px; }
+  .hero-actions, .products-actions, .custom-actions { gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+  .section, .factory-section, .factory-proof, .factory-control, .shipment-section, .quote-panel, .custom-section, .order-tracker,
+  .kinetic-intro, .factory-mosaic, .program-wall, .custom-teaser, .flow-strip { padding: 36px 0; }
+  .home-video-page .home-video-hero { min-height: 85svh; }
+  .home-video-copy { padding: 110px 0 40px; }
+  .home-video-tags { margin-top: 18px; gap: 6px; }
+  .home-video-tags span, .program-tags span, .hero-tags span { font-size: 10px; padding: 5px 8px; }
+  .products-hero { padding: 32px 0; }
+  .products-hero-inner { gap: 24px; }
+  .products-capability-matrix, .product-entry-row, .signal-strip, .program-rail, .category-index,
+  .product-slots, .pc-pattern-grid, .custom-levels, .material-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .capability-card, .product-entry { min-height: 120px; padding: 16px; border-radius: 12px; }
+  .products-capability-matrix .capability-card h3, .product-entry-row .product-entry h3 { font-size: 17px; }
+  .capability-card p, .product-entry p { font-size: 12px; }
+  .product-entry__icon { width: 58px; height: 58px; margin-bottom: 12px; }
+  .product-entry__icon svg, .product-entry__icon img { width: 34px; height: 34px; }
+  .category-block { padding: 32px 0; }
+  .category-layout { gap: 20px; min-width: 0; }
+  .category-intro, .slot, .card, .tracker-query, .tracker-live { min-width: 0; }
+  .slot, .pc-pattern-grid .slot { min-height: 0; padding: 12px; }
+  .slot img, .pc-pattern-grid .slot img { height: 150px; object-fit: contain; }
+  .slot h3 { font-size: 15px; overflow-wrap: anywhere; }
+  .slot p, .slot .tag { font-size: 12px; }
+  .slot .empty { min-height: 150px; }
+  .signal { padding: 20px 12px; }
+  .signal b { font-size: 38px; }
+  .signal span { font-size: 10px; }
+  .mosaic-card, .mosaic-card:first-child { height: 250px; }
+  .program-card { min-height: 260px; padding: 16px; }
+  .custom-copy, .custom-stage { min-height: 280px; padding: 20px; }
+  .flow-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .flow-step { min-height: 100px; padding: 16px; }
+  .factory-hero { padding: 90px 0 32px; }
+  .hero-panel { padding: 20px; }
+  .metric-strip, .proof-stack, .control-board, .quote-list { min-height: 0; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .proof-grid, .quote-grid { grid-template-columns: minmax(0, 1fr); }
+  .proof-grid > *, .quote-grid > *, .proof-tile, .quote-item { min-width: 0; overflow-wrap: anywhere; }
+  .visual-card, .shipment-card { min-height: 260px; }
+  .process-visual { min-height: 230px; }
+  .mini-card img { height: 160px; }
+  .custom-hero { padding: 90px 0 32px; }
+  .hero-proof-card, .starter-panel, .level-card, .material-card, .require-card { padding: 18px; }
+  .compact-timeline { grid-template-columns: repeat(7, 150px); }
+  .case-grid .case-card { flex-basis: 210px; }
+  .case-grid .case-card img { height: 200px; }
+  .tracker-board { min-width: 0; }
+  .tracker-search input { min-width: 0; width: 100%; }
+  .tracker-percent strong { font-size: 36px; }
+  .table { display: block; overflow-x: auto; }
+  .cta, .custom-cta { padding: 32px 0; }
+  .footer { padding-top: 32px; padding-bottom: 100px; }
+  .footer-grid { gap: 22px; }
+  .quote-float { min-height: 44px; bottom: 16px; font-size: 12px; padding: 0 14px; }
+  .whatsapp-float { width: 48px; height: 48px; }
+  .whatsapp-float__icon svg { width: 32px; height: 32px; }
+}
