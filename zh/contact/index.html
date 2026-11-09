@@ -639,13 +639,16 @@
             <input name="country" placeholder="国家 / 地区">
             <input name="quantity" placeholder="预计数量，例如 100 件">
           </div>
-          <select name="product">
-            <option value="意向产品">意向产品</option>
-            <option value="缤纷 V-Line 20 英寸 PP 登机箱">缤纷 V-Line 20 英寸 PP 登机箱</option>
-            <option value="缤纷 AeroShell 24 英寸 ABS 万向轮行李箱">缤纷 AeroShell 24 英寸 ABS 万向轮行李箱</option>
-            <option value="OEM / ODM 行李箱定制">OEM / ODM 行李箱定制</option>
-            <option value="六件套行李箱套装">六件套行李箱套装</option>
-            <option value="其他箱包项目">其他箱包项目</option>
+          <select name="product" aria-label="产品类目">
+            <option value="产品类目">产品类目</option>
+            <option value="PP 行李箱">PP 行李箱</option>
+            <option value="SKD 行李箱（半散装）">SKD 行李箱（半散装）</option>
+            <option value="ABS/PC 拉链行李箱">ABS/PC 拉链行李箱</option>
+            <option value="铝框行李箱">铝框行李箱</option>
+            <option value="PC 图案及印花行李箱">PC 图案及印花行李箱</option>
+            <option value="行李箱壳及配件">行李箱壳及配件</option>
+            <option value="儿童行李箱">儿童行李箱</option>
+            <option value="定制及专属服务">定制及专属服务</option>
           </select>
           <textarea name="message" required placeholder="请告知所需材质、颜色、标识、包装、交货港口、目标价格及交期。"></textarea>
           <button class="btn btn-dark" type="submit">发送询盘</button>
