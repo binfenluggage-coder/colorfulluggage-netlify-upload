@@ -130,8 +130,8 @@ html[dir="rtl"] .factory-intro-dialog h2 { margin-left: 44px; margin-right: 0; }
   html[data-locale] .nav .nav-inner { gap: 5px; }
 }
 
-/* Hei / sans-serif typography for page and section headings. */
-html h1, html h2 {
-  font-family: SimHei, "Heiti SC", "Microsoft YaHei", "PingFang SC", "Noto Arabic", Arial, sans-serif;
+/* Hei typography for the navigation brand beside the logo. */
+html header.nav .brand strong {
+  font-family: SimHei, "Heiti SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
   font-weight: 700;
 }
