@@ -150,6 +150,41 @@
     link.href = url.href;
   });
 
+  // Stack the catalog request directly above the floating quotation button.
+  const quoteButton = document.querySelector('.quote-float');
+  if (quoteButton) {
+    const catalogLabels = {
+      en: 'Get Catalog', zh: '获取目录', es: 'Obtener catálogo',
+      fr: 'Obtenir le catalogue', de: 'Katalog anfordern',
+      ar: 'احصل على الكتالوج', ru: 'Получить каталог', pt: 'Obter catálogo',
+    };
+    const catalogMessages = {
+      en: 'Hello, please send me your luggage product catalog.',
+      zh: '您好，请发送贵公司的行李箱产品目录。',
+      es: 'Hola, por favor envíenme su catálogo de equipaje.',
+      fr: 'Bonjour, veuillez m’envoyer votre catalogue de bagages.',
+      de: 'Guten Tag, bitte senden Sie mir Ihren Kofferkatalog.',
+      ar: 'مرحبًا، يرجى إرسال كتالوج حقائب السفر لديكم.',
+      ru: 'Здравствуйте! Пожалуйста, пришлите каталог ваших чемоданов.',
+      pt: 'Olá, por favor envie seu catálogo de malas.',
+    };
+    const catalog = document.createElement('a');
+    catalog.className = 'quote-float catalog-float';
+    catalog.textContent = catalogLabels[current] || catalogLabels.en;
+    catalog.href = 'https://wa.me/8615633127310?text=' +
+      encodeURIComponent(catalogMessages[current] || catalogMessages.en);
+    catalog.target = '_blank';
+    catalog.rel = 'noopener noreferrer';
+    document.body.append(catalog);
+    const positionCatalog = () => {
+      const quoteStyle = getComputedStyle(quoteButton);
+      catalog.style.bottom = (parseFloat(quoteStyle.bottom) +
+        quoteButton.offsetHeight + 20) + 'px';
+    };
+    positionCatalog();
+    window.addEventListener('resize', positionCatalog);
+  }
+
   const preferred = safeGet('localStorage', 'colorful.language');
   if (languages.some(([lang]) => lang === preferred) && preferred !== current) {
     location.replace(targetURL(preferred).href);
