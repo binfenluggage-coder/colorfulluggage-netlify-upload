@@ -135,3 +135,45 @@ html header.nav .brand strong {
   font-family: SimHei, "Heiti SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
   font-weight: 700;
 }
+
+/* Give catalog imagery more space so shell textures are visible. */
+html[data-page="products/index.html"] .category-layout {
+  grid-template-columns: minmax(220px, .28fr) minmax(0, .72fr);
+  gap: 28px;
+}
+html[data-page="products/index.html"] .category-intro h2 {
+  font-size: clamp(24px, 2.2vw, 32px);
+}
+html[data-page="products/index.html"] .category-intro p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+html[data-page="products/index.html"] .category-intro .tag {
+  font-size: 10px;
+  padding: 6px 8px;
+}
+html[data-page="products/index.html"] .product-slots {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+html[data-page="products/index.html"] .product-slots .slot {
+  padding: 12px;
+}
+html[data-page="products/index.html"] .product-slots .slot img {
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+@media (max-width: 900px) {
+  html[data-page="products/index.html"] .category-layout {
+    grid-template-columns: 1fr;
+  }
+  html[data-page="products/index.html"] .category-intro {
+    position: static;
+  }
+}
+@media (max-width: 620px) {
+  html[data-page="products/index.html"] .product-slots {
+    grid-template-columns: 1fr;
+  }
+}
